@@ -1,4 +1,5 @@
 # ECMWF Jupyterbook learning resource template
+
 This repository is a github template to facilitate development and maintenance of ECMWF Jupyterbooks used for learning.
 
 A new repository can be created from this by simply selecting the green `Use this template` icon on the top right. Create a repository from this template for Jupyterbooks you plan to develop for training purposes at ECMWF.
@@ -6,6 +7,15 @@ A new repository can be created from this by simply selecting the green `Use thi
 The default branch for this repository is **develop**, and this branch is used to deploy the review/development version of the JupyterBook. The **main** branch is reserved for published content and will be maintained by ECMWF.
 
 The repository includes github-actions which will automatically build a develop version of the Jupyter Book that can be used for review purposes.
+
+## Notebook development instructions
+
+When developing a notebook please follow the templating guide found in the 
+[jupyter-notebook-template](https://github.com/ecmwf-training/jupyter-notebook-template).
+
+The dependancies for the notebooks in this repository should be listed in the environment.yml file.
+(Please note that the dependancies listed in `ci/requirements.txt` are for the github actions, you should not need to modify these dependancies)
+
 
 ## Jupyterbook Build instructions
 
@@ -54,6 +64,9 @@ into the develop branch if the `Build` action is successful.
 
 The **`Deploy`** action deploys the build JupyterBook to the github pages associated with this repository.
 This action is activated when a change is made to the develop branch, after the build action.
+
+The requirements of the github actions are listed in `ci/requirements.txt`, do not modify this file.
+The dependancies of your notebooks should be stored in the `environment.yml` file.
 
 ## Troubleshooting notes
 
