@@ -4,6 +4,6 @@
 format: jb-book
 root: intro-jupyter-template
 chapters:
-- file: jupyter-notebook-template
+- file: jupyter-notebook-template-copernicus
 
 
