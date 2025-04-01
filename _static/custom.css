@@ -1,0 +1,14 @@
+/* Add a horizontal rule above all level 2 headers */
+h2 {
+    position: relative;
+    margin-top: 40px; /* Space above the header */
+    padding-top: 10px;
+}
+
+h2::before {
+    content: "";
+    display: block;
+    width: 100%;
+    border-top: 2px solid #ccc; /* Horizontal rule */
+    margin-bottom: 10px; /* Space between rule and header */
+}
