@@ -8,8 +8,8 @@ h2 {
 h2::before {
     content: "";
     display: block;
-    width: 100%;
-    border-top: 2px solid #ccc; /* Horizontal rule */
+    width: 90%;
+    border-top: 1px solid #e8e8e8; /* Horizontal rule */
     margin-bottom: 10px; /* Space between rule and header */
 }
 
